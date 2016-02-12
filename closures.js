@@ -11,11 +11,13 @@ var outer = function(){
 
   //Code Here
 
+var inner = outer();
+
 //Once you do that, invoke inner.
 
   //Code Here
 
-
+inner();
 
 //Next problem
 
@@ -123,5 +125,3 @@ var callFriend = function(){
 
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
-
-
