@@ -36,7 +36,8 @@ var callFriend = function(){
 
   //Code Here
 
-
+var callJake = callFriend();
+callJake(4352159248);
 
 //Next Problem
 
