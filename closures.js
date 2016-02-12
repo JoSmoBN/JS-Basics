@@ -80,6 +80,8 @@ function makeCounter() {
 */
 
   //Code Here
+
+
 function codeLove() {               //function that does exactly what it looks like it does.
     return "I love code";
 }
@@ -88,9 +90,9 @@ function codeLove() {               //function that does exactly what it looks l
         return function() {         //returning a nameless function.
             if (ifFirst) {          //if statement that changes variables boolean to false.
                 ifFirst = false;
-                return func();
+                return func();      //return argument, as a function to invoke.
             }
-            return null;
+            return null;            //if already run once, will return false.
     }
 }
 
@@ -112,7 +114,21 @@ codeEcho();
   'N' number of times, return 'STOP'.
 */
 
-function fnCounter 
+
+function fnCounter( func, N ) {
+
+    for (N; N > 0; N--) {
+        func();
+    }
+            return "STOP";
+}
+
+
+fnCounter( function(){
+    return "this is working"
+}, 10);
+
+
 
 //Next Problem
 
