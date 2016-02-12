@@ -46,6 +46,16 @@ callJake(4352159248);
 /*
   Write a function called makeCounter that makes the following code work properly.
 */
+function makeCounter() {
+    var counter = 0;
+    counter++;
+
+    function countContributer() {
+        console.log(counter++);
+    }
+    return countContributer;
+}
+
 
   //Code Here
   var count = makeCounter();
@@ -61,22 +71,48 @@ callJake(4352159248);
 
 
 /*
-  Write a function named codeLove that returns the string 'I love code'. Write a second function named codeFriend that accepts the first function as it's first parameter. The second function should return a new third function. Store the third function in a variable, codeEcho which, when invoked, invokes the first, original function that was passed in, but will only ever do so once (returns null after first invocation).
+  Write a function named codeLove that returns the string 'I love code'. Write a
+  second function named codeFriend that accepts the first function as it's first
+  parameter. The second function should return a new third function. Store the
+  third function in a variable, codeEcho which, when invoked, invokes the first,
+  original function that was passed in, but will only ever do so once (returns
+  null after first invocation).
 */
 
   //Code Here
+function codeLove() {               //function that does exactly what it looks like it does.
+    return "I love code";
+}
+    function codeFriend(func) {     //function that has one parameter.
+        var ifFirst = true;         //variable with a true boolean.
+        return function() {         //returning a nameless function.
+            if (ifFirst) {          //if statement that changes variables boolean to false.
+                ifFirst = false;
+                return func();
+            }
+            return null;
+    }
+}
 
-
+var codeEcho = codeFriend(codeLove);
+codeEcho();
+codeEcho();
+codeEcho();
+codeEcho();
 
 //Next Problem
 
 
 
 /*
-  Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
+  Now, similar to the last problem, write a function called 'fnCounter' that
+  accepts two parameters. The first parameter will be an anonymous function and
+  the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the
+  anonymous funciton to be invoked 'N' number of times. After it's been invoked
+  'N' number of times, return 'STOP'.
 */
 
-
+function fnCounter 
 
 //Next Problem
 
