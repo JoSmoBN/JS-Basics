@@ -134,31 +134,56 @@ fnCounter( function(){
 
 
 
-/*
-  var counter = function(){
-    for (var i=1; i<=5; i++) {
-      setTimeout( function timer(){
-          console.log( i );
-      }, i*1000 );
-    }
-  };
 
-  Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
+//   var counter = function(){
+//     for (var i=1; i<=5; i++) {
+//       setTimeout( function timer(){
+//           console.log( i );
+//       }, i*1000 );
+//     }
+//   };
+//
+//
+//   Above you have a function named counter. Examine the function
+//  (without running the code) then below write what you expect to happen when the
+//  funciton is invoked. *Hint: setTimeout calls a function or evaluates an
+//  expression after a specified number of milliseconds.
+//
+//     //Answer Here
+//     5
+//
+//   Now, run the function in your console and note what happpens.
+//
+//   Was your answer right or wrong?
+//
+//     //Answer Here
+//     6
+//     6
+//     6
+//     6
+//     6
+//
+//   Fix the counter function so that it works the way you expect it to work.
+//   (logging 1 then 2 then 3, etc) (Note: No unit test for this one because of
+//   the timeout)
 
-    //Answer Here
-
-
-  Now, run the function in your console and note what happpens.
-
-  Was your answer right or wrong?
-
-    //Answer Here
-
-
-  Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc) (Note: No unit test for this one because of the timeout)
-*/
 
     //Code Here
+
+
+function counter() {
+
+    for (i = 1; i <= 5; i++) {
+        timer(i);
+    }
+    function timer(banana) {
+        setTimeout(function(){
+            console.log(banana);
+        }, banana * 1000);
+    }
+}
+
+counter();
 
 
 
