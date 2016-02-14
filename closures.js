@@ -171,19 +171,18 @@ fnCounter( function(){
     //Code Here
 
 
-function counter() {
-
-    for (i = 1; i <= 5; i++) {
-        timer(i);
+    function counter() {
+        for (var i = 1; i <= 5; i++) {
+            timer(i);
+        }
+        function timer(banana) {
+            setTimeout(function timer() {
+                console.log(banana);
+            }, banana * 1000)
+        }
     }
-    function timer(banana) {
-        setTimeout(function(){
-            console.log(banana);
-        }, banana * 1000);
-    }
-}
 
-counter();
+    counter();
 
 
 
