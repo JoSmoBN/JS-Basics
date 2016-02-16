@@ -193,7 +193,7 @@ fnCounter( function(){
 
 
 var funcArray = [];
-for (var i = 0; i <= 10; i++) {
+for (var i = 0; i <= 3; i++) {
   (function(hat) {
     funcArray.push(function() {
       console.log(hat);

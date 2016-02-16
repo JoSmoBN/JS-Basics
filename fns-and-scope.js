@@ -7,26 +7,42 @@ var name = 'Tyler';
 
   //Code Here
 
+function isTyler(name) {
+    if (name === 'Tyler') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 //Next problem
 
 
 
-//Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
+//Create a function called getName that uses prompt() to prompt the user for
+//their name, then returns the name.
 
 
   //Code Here
 
+function getName() {
+    var name = prompt('What is your name?');
+    return name;
+}
 
 //Next Problem
 
 
 
-//Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
-//then alerts "Welcome, " plus whatever the users name is.
+//Create a function called welcome that uses your getName function you created
+//in the previous problem to get the users name, then alerts "Welcome, " plus
+//whatever the users name is.
 
   //Code Here
 
-
+function welcome() {
+    alert('Welcome ' + getName());
+}
 //Next problem
 
 
@@ -36,6 +52,7 @@ var name = 'Tyler';
 
   //Answer Here
 
+//Parameters are placeholders for arguments
 
 //Next problem
 
@@ -46,25 +63,28 @@ var name = 'Tyler';
 
   //Answer Here
 
-
+//undefined, NaN, 0, null, "" and you check with the !
 
 //Next Problem
-
 
 
 //Create a function called myName that returns your name
 
   //Code Here
-  
 
+function myName() {
+    return "Joseph";
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
+var newMyName = myName();
+
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName);
 
 //Next problem
 
@@ -74,8 +94,17 @@ var name = 'Tyler';
 
   //Code Here
 
+  function outerFn() {
+      return function() {
+          return 'Joseph';
+      }
+  }
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+
+  var innerFn = outerFn();
+
 
 //Now invoke innerFn.
